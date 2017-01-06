@@ -1,0 +1,6 @@
+Listing certificates request:
+	sudo puppet cert list
+Signing agent:
+	sudo puppet cert sign <agent_hostname>
+Sign all agents:
+	sudo puppet cert sign --all

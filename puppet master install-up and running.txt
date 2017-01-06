@@ -16,7 +16,7 @@ check iptables and selinux
 	service iptables stop
 	chkconfig iptables off	
 generate puppet certs
-	sudo puppet master --verbose --no-daemonize
+	sudo pupppet master --verbose --no-daemonize
 	ls -l /var/lib/puppet/ssl/
 install apache and passenger and dependencies
 	yum install httpd httpd-devel mod_ssl ruby-devel rubygems gcc gcc-c++ libcurl-devel openssl-devel -y
