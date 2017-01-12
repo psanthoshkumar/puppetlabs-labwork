@@ -1,0 +1,43 @@
+puppet agent:
+
+LINUX:
+---------
+Add puppet master details in hosts files
+	vi /etc/hosts - IP hostname FQDN
+	echo IP FQDN hostname >> /etc/hosts
+install puppet agent
+	install puppet repo
+	yum install -y http://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
+	sudo yum install puppet
+Add puppet master details in puppet.conf
+	sample:
+	[agent]
+		server = puppetmaster
+generate certificates
+sudo puppet agent --verbose --no-daemonize --onetime
+
+
+Ubuntu:
+--------
+
+Add puppet master details in hosts files
+	vi /etc/hosts - IP hostname FQDN 
+	echo IP hostname FQDN  >> /etc/hosts
+install puppet agent
+	install puppet repo
+	wget http://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+	sudo dpkg -i puppetlabs-release-trusty.deb
+	sudo yum install puppet
+	sudo apt-get update
+	sudo apt-get install puppet
+
+Add puppet master details in puppet.conf
+	sample:
+	sudo vi /etc/puppet/puppet.conf
+	ADD:
+	[agent]
+		server = puppetmaster_server_hostname
+eanble puppet agent
+	sudo puppet agent --enable
+generate certificates
+sudo puppet agent --verbose --no-daemonize --onetime	

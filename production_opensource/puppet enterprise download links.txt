@@ -1,0 +1,7 @@
+puppet links:
+
+Linux - version 7 x86_64	-	https://pm.puppetlabs.com/cgi-bin/download.cgi?dist=el&rel=7&arch=x86_64&ver=latest
+linux - version 6 x86_64	-	https://pm.puppetlabs.com/cgi-bin/download.cgi?dist=el&rel=6&arch=x86_64&ver=latest
+ubuntu version 16.04 amd64	-	https://pm.puppetlabs.com/cgi-bin/download.cgi?dist=ubuntu&rel=16.04&arch=amd64&ver=latest
+suse version 12 x86_64		-	https://pm.puppetlabs.com/cgi-bin/download.cgi?dist=sles&rel=12&arch=x86_64&ver=latest
+

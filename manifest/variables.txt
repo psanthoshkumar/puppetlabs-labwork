@@ -1,0 +1,8 @@
+variables:
+
+class linux {
+$admintools = ['git','nano','ntp']
+package { $admintools:
+ensure	=> 'installed',
+}
+} 

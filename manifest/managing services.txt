@@ -1,0 +1,21 @@
+managing services
+
+	node 'labpptl02' {
+		package { 'ntp':
+		ensure	=>	'installed',
+		}
+	service { 'ntpd':
+		ensure	=>	'running',
+		enable	=>	'true'
+		}
+	}
+	
+	node 'labpptl03' {
+		package { 'ntp':
+		ensure	=>	'installed',
+		}
+	service { 'ntpd':
+		ensure	=>	'running',
+		enable	=>	'true'
+		}
+	}

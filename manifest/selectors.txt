@@ -1,0 +1,29 @@
+selectors:
+
+puppet variable will begin with $ sign
+
+fact : OS built in functions
+
+$ntpservice = $osfamily ? { 
+	'redhat'	=>	'ntpd',
+	'debian'	=>	'ntp',
+	default		=>	'ntp',
+}
+
+We can replace varialbes in services with $ntpservice..
+
+example:
+$ntpservice = $osfamily ? { 
+	'redhat'	=>	'ntpd',
+	'debian'	=>	'ntp',
+	default		=>	'ntp',
+}
+node 'labpptl02' {
+		package { '$ntpservice':
+		ensure	=>	'installed',
+		}
+	service { '$ntpservice':
+		ensure	=>	'running',
+		enable	=>	'true'
+		}
+	}

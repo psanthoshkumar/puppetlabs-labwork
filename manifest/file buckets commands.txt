@@ -1,0 +1,7 @@
+restore original file from modified
+	sudo puppet filebucket -l --bucket /var/lib/puppet/clientbucket restore /info.txt <md5_code>
+
+view contents of file based on md5 code
+
+	sudo puppet filebucket -l --bucket /var/lib/puppet/clientbucket get <md5_code>
+

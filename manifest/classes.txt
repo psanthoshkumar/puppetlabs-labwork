@@ -1,0 +1,14 @@
+classes:
+
+a named collection of resources declarations. variables, selectors or any other puppet code
+
+write once and reuse it many times
+
+class linux {
+	package { 'ntp' :
+	ensure	=> 'installed',
+	}
+	
+node 'labpptl02' {
+	{class 'linux': }
+	}

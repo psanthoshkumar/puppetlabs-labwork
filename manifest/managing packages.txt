@@ -1,0 +1,13 @@
+managing packages:
+
+	node 'labpptl02' {
+		package { 'ntp':
+			ensure	=>	'installed',
+		}
+	}
+	
+	node 'labpptl03' {
+		package { 'ntp':
+			ensure	=>	'installed',
+		}
+	}
